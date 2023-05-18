@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaeyrChecedCollision : MonoBehaviour
+public class PlayerChecedCollision : MonoBehaviour
 {
     [SerializeField] private string _tagEnemy;
     [SerializeField] private Vector2 _startPosition;

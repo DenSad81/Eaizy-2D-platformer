@@ -7,11 +7,9 @@ public class EnjemyMover : MonoBehaviour
     [SerializeField] private float _pointA;
     [SerializeField] private float _pointB;
     [SerializeField] private float _setpointPosition;
-
     [SerializeField] private float _velocity;
     [SerializeField] private bool _goRight = true;
     [SerializeField] private bool _goLeft;
-
     [SerializeField] private float _incrementDecrementPosition;
 
     private void Start()

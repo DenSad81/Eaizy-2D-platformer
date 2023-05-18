@@ -4,11 +4,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 
-public class PlaeyrAtaked : MonoBehaviour
+public class PlayerAtaked : MonoBehaviour
 {
     private Animator _animator2DKnight;
     private bool _isAttak;
-    private string _isAttac = "isAttac";
+    private string _attak = "isAttak";
 
     public bool IsAttakActiv { get; private set; }
 
@@ -27,7 +27,7 @@ public class PlaeyrAtaked : MonoBehaviour
             StartCoroutine(CorutineAttakIsActiv());
         }
 
-        _animator2DKnight.SetBool(_isAttac, _isAttak);
+        _animator2DKnight.SetBool(_attak, _isAttak);
     }
 
     private IEnumerator CorutineAttakIsActiv()

@@ -5,21 +5,21 @@ using UnityEngine;
 public class BonusChecedCollision : MonoBehaviour
 {
     [SerializeField] private string _nameHero;
-    private PlaeyrAtaked _plaeyerAtaked;
+
+    private PlayerAtaked _playerAtaked;
 
     public bool BonusMustDie { get; private set; }
-
     public bool IsCollisionActiv { get; private set; }
 
     private void Start()
     {
         var _objectWithName = GameObject.Find(_nameHero);
-        _plaeyerAtaked = _objectWithName.GetComponent<PlaeyrAtaked>();
+        _playerAtaked = _objectWithName.GetComponent<PlayerAtaked>();
     }
 
     private void Update()
     {
-        BonusMustDie = IsCollisionActiv & _plaeyerAtaked.IsAttakActiv;
+        BonusMustDie = IsCollisionActiv & _playerAtaked.IsAttakActiv;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -222,7 +222,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isAttac
+    m_ConditionEvent: isAttak
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5350440405820967816}
@@ -428,13 +428,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: isAttac
+    m_Controller: {fileID: 0}
+  - m_Name: isAttak
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -521,7 +521,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isAttac
+    m_ConditionEvent: isAttak
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 595308227850066163}

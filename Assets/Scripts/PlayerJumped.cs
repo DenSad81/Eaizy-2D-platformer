@@ -8,7 +8,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
-public class PlaeyrJumped : MonoBehaviour
+public class PlayerJumped : MonoBehaviour
 {
     [SerializeField] private float _deltaYForJump = 0.05f;
     [SerializeField] private int _tallForJump = 100;

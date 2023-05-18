@@ -8,7 +8,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 
-public class PlaeyrMoved : MonoBehaviour
+public class PlayerMoved : MonoBehaviour
 {
     [SerializeField] private float _runSpead = 10f;
     [SerializeField] private float _walkSpead = 5f;

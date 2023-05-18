@@ -10,14 +10,13 @@ public class BonusDied : MonoBehaviour
     private BonusChecedCollision _bonusChecedCollision;
     private ParticleSystem _particleSystem;
 
-    void Start()
+    private void Start()
     {
         _bonusChecedCollision= GetComponent<BonusChecedCollision>();
         _particleSystem = GetComponent<ParticleSystem>();
     }
 
-  
-    void Update()
+    private void Update()
     {
         if (_bonusChecedCollision.BonusMustDie)
         {
