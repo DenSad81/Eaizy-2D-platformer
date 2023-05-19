@@ -9,6 +9,7 @@ public class PlayerAtaked : MonoBehaviour
     private Animator _animator2DKnight;
     private bool _isAttak;
     private string _attak = "isAttak";
+    private WaitForSeconds _waitFor1Second = new WaitForSeconds(1);
 
     public bool IsAttakActiv { get; private set; }
 
@@ -33,7 +34,7 @@ public class PlayerAtaked : MonoBehaviour
     private IEnumerator CorutineAttakIsActiv()
     {
         IsAttakActiv = true;
-        yield return new WaitForSeconds(1);
+        yield return _waitFor1Second;
         IsAttakActiv = false;
     }
 }
