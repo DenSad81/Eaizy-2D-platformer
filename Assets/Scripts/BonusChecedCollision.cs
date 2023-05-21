@@ -20,7 +20,7 @@ public class BonusChecedCollision : MonoBehaviour
 
     private void Update()
     {
-        BonusMustDie = IsCollisionActiv & _playerAtaked.IsAttakActiv;
+        BonusMustDie = IsCollisionActiv & _playerAtaked.IsAttackActiv;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

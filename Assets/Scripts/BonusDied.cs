@@ -9,10 +9,11 @@ public class BonusDied : MonoBehaviour
 {
     private BonusChecedCollision _bonusChecedCollision;
     private ParticleSystem _particleSystem;
+    private WaitForSeconds _waitFor2Seconds = new WaitForSeconds(2);
 
     private void Start()
     {
-        _bonusChecedCollision= GetComponent<BonusChecedCollision>();
+        _bonusChecedCollision = GetComponent<BonusChecedCollision>();
         _particleSystem = GetComponent<ParticleSystem>();
     }
 
@@ -30,7 +31,7 @@ public class BonusDied : MonoBehaviour
 
     private IEnumerator CorutineDestroyObject()
     {
-        yield return new WaitForSeconds(2);
+        yield return _waitFor2Seconds;
         Destroy(gameObject);
     }
 }

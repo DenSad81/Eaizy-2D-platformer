@@ -7,11 +7,11 @@ using UnityEngine;
 public class PlayerAtaked : MonoBehaviour
 {
     private Animator _animator2DKnight;
-    private bool _isAttak;
-    private string _attak = "isAttak";
+    private bool _isAttack;
+    private string _attack = "isAttack";
     private WaitForSeconds _waitFor1Second = new WaitForSeconds(1);
 
-    public bool IsAttakActiv { get; private set; }
+    public bool IsAttackActiv { get; private set; }
 
     private void Start()
     {
@@ -20,21 +20,21 @@ public class PlayerAtaked : MonoBehaviour
 
     private void Update()
     {
-        _isAttak = false;
+        _isAttack = false;
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            _isAttak = true;
-            StartCoroutine(CorutineAttakIsActiv());
+            _isAttack = true;
+            StartCoroutine(CorutineAttackIsActiv());
         }
 
-        _animator2DKnight.SetBool(_attak, _isAttak);
+        _animator2DKnight.SetBool(_attack, _isAttack);
     }
 
-    private IEnumerator CorutineAttakIsActiv()
+    private IEnumerator CorutineAttackIsActiv()
     {
-        IsAttakActiv = true;
+        IsAttackActiv = true;
         yield return _waitFor1Second;
-        IsAttakActiv = false;
+        IsAttackActiv = false;
     }
 }

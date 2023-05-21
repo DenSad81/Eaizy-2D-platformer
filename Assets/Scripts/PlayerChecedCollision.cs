@@ -9,7 +9,7 @@ public class PlayerChecedCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == _tagEnemy)
+        if (collision.gameObject.TryGetComponent<EnemyMover>(out EnemyMover enemyMover))
             transform.position = _startPosition;
     }
 }
