@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c275b7810b91b6b42a3b8f67e4a62ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nameHero: Knight
+  _hero: {fileID: 0}
 --- !u!212 &7003105735569117713
 SpriteRenderer:
   m_ObjectHideFlags: 0

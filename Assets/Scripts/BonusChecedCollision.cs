@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BonusChecedCollision : MonoBehaviour
 {
-    [SerializeField] private string _nameHero;
+    [SerializeField] private GameObject _hero;
 
     private PlayerAtaked _playerAtaked;
     private WaitForSeconds _waitFor1Second = new WaitForSeconds(1);
@@ -14,8 +14,7 @@ public class BonusChecedCollision : MonoBehaviour
 
     private void Start()
     {
-        var _objectWithName = GameObject.Find(_nameHero);
-        _playerAtaked = _objectWithName.GetComponent<PlayerAtaked>();
+        _playerAtaked = _hero.GetComponent<PlayerAtaked>();
     }
 
     private void Update()

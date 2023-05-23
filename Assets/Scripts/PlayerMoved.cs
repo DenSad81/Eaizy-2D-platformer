@@ -18,7 +18,7 @@ public class PlayerMoved : MonoBehaviour
 
     private void Start()
     {
-        _animator2DKnight = this.gameObject.GetComponent<Animator>();
+        _animator2DKnight = GetComponent<Animator>();
     }
 
     private void Update()

@@ -19,7 +19,7 @@ public class PlayerJumped : MonoBehaviour
 
     private void Start()
     {
-        _rigitbody2DKnight = this.gameObject.GetComponent<Rigidbody2D>();
+        _rigitbody2DKnight = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
